@@ -1,282 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jyestha Foods Pvt Ltd | Quality Rice for a Healthier Tomorrow</title>
-  <meta name="description" content="Jyestha Foods Pvt Ltd – Rice manufacturers, agro commodities & exporters based in Tumakuru, Karnataka. Premium quality rice and by-products for domestic and international markets." />
+  <meta name="description" content="Jyestha Foods Pvt Ltd — rice manufacturers, agro commodities and exporters based in Tumakuru, Karnataka." />
+  <meta name="theme-color" content="#164A3A" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <header class="header" id="header">
-    <div class="container nav-container">
-      <a href="#home" class="logo">
-        <img src="logo-icon.png" alt="Jyestha Foods" class="logo-img" />
-        <span class="logo-text">Jyestha Foods</span>
+    <div class="wrap nav-bar">
+      <a class="brand" href="#top">
+        <img src="logo.png" alt="" />
+        <span>Jyestha Foods</span>
       </a>
-      <nav class="nav" id="nav">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#products" class="nav-link">Products</a>
-        <a href="#export" class="nav-link">Export</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#export">Export</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Talk to us</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="menuIcon"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#export">Export</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <div class="hero-logo-wrap">
-        <img src="logo-icon.png" alt="Jyestha Foods" class="hero-logo" />
+  <main id="top">
+    <section class="wrap hero">
+      <div class="hero-mark">
+        <img src="logo.png" alt="Jyestha Foods mark" />
       </div>
-      <div class="hero-badge">Rice Manufacturers • Agro Commodities • Exports</div>
-      <h1 class="hero-title">
-        Quality Rice for a<br />
-        <span>Healthier Tomorrow</span>
-      </h1>
-      <p class="hero-subtitle">
-        Jyestha Foods Pvt Ltd — premium rice manufacturing, agro commodities and export of high-quality rice and by-products from Karnataka, India.
-      </p>
-      <div class="hero-cta">
-        <a href="#products" class="btn btn-primary">Explore Products</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      <div>
+        <p class="pill">Rice manufacturers · Agro commodities · Exports</p>
+        <h1>Quality rice for a <span class="accent">healthier tomorrow</span></h1>
+        <p class="lede" style="margin-top:1.5rem">
+          Jyestha Foods Pvt Ltd mills, trades and exports premium rice and by-products from Tumakuru, Karnataka — with the consistency buyers expect on both domestic and overseas orders.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#products">Explore products</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <p class="assoc">In association with <strong>CM Ventures</strong><span class="bar">|</span><strong>Airaa Global</strong></p>
       </div>
-      <div class="hero-partners">
-        <span>In association with</span>
-        <strong>CM Ventures</strong>
-        <span class="divider">|</span>
-        <strong>Airaa Global</strong>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Who We Are</span>
-        <h2 class="section-title">About Jyestha Foods</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-grid about-grid-single">
-        <div class="about-content">
-          <p>
-            <strong>Jyestha Foods Pvt Ltd</strong> is a focused rice industry enterprise engaged in manufacturing, trading and export of premium quality rice and valuable by-products. Rooted in Tumakuru, Karnataka, we combine traditional knowledge of Indian rice varieties with modern processing standards.
-          </p>
-          <p>
-            Our mission is simple: deliver consistent, hygienic and nutritious rice that supports healthier lifestyles — both in domestic markets and across international borders.
-          </p>
-          <div class="about-highlights about-highlights-row">
-            <div class="highlight">
-              <div class="highlight-icon">🌾</div>
-              <div>
-                <h4>Premium Sourcing</h4>
-                <p>Carefully selected paddy from trusted growers</p>
-              </div>
-            </div>
-            <div class="highlight">
-              <div class="highlight-icon">🏭</div>
-              <div>
-                <h4>Modern Milling</h4>
-                <p>Hygienic processing & quality control</p>
-              </div>
-            </div>
-            <div class="highlight">
-              <div class="highlight-icon">🌍</div>
-              <div>
-                <h4>Global Reach</h4>
-                <p>Export-ready packaging & documentation</p>
-              </div>
-            </div>
-          </div>
+    <section class="strip">
+      <div class="wrap strip-grid">
+        <div>
+          <h3>Manufacturing</h3>
+          <p>Hygienic milling with controlled polish and moisture</p>
+        </div>
+        <div>
+          <h3>Agro commodities</h3>
+          <p>Table rice, raw, parboiled and useful by-products</p>
+        </div>
+        <div>
+          <h3>Exports</h3>
+          <p>Documentation, packing and supply from Karnataka</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Products -->
-  <section class="section products" id="products">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">What We Offer</span>
-        <h2 class="section-title">Rice & By-Products</h2>
-        <div class="section-line"></div>
-        <p class="section-desc">
-          From table rice to industrial by-products — consistent quality for every requirement.
-        </p>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow">Who we are</p>
+            <h2>A rice house built around the whole grain</h2>
+            <div class="rule"></div>
+            <p class="lede" style="margin-top:1.5rem">Jyestha Foods Pvt Ltd is a focused rice enterprise in Tumakuru. We combine careful sourcing with modern processing so every shipment — table rice or by-product — arrives clean, consistent and ready to use.</p>
+            <p class="lede">The brief is simple: nutritious rice for healthier tables, and reliable supply for traders and importers.</p>
+          </div>
+          <div class="photo">
+            <img src="photos/paddy.jpg" alt="Mature paddy field at golden hour" />
+          </div>
+        </div>
+        <div class="cards-3">
+          <article class="card"><h3>Sourcing</h3><p>Paddy selected with trusted growers before it reaches the mill.</p></article>
+          <article class="card"><h3>Milling</h3><p>Process control on purity, broken levels and finish.</p></article>
+          <article class="card"><h3>Reach</h3><p>Domestic trade and export packing from one Karnataka base.</p></article>
+        </div>
       </div>
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-icon">🍚</div>
-          <h3>Premium Table Rice</h3>
-          <p>Carefully milled and graded rice varieties suitable for daily consumption, hotels, restaurants and institutional supply.</p>
-          <ul>
-            <li>Multiple grain lengths & textures</li>
-            <li>Hygienic packaging options</li>
-            <li>Consistent polish & moisture control</li>
-          </ul>
-        </article>
-        <article class="product-card featured">
-          <div class="product-badge">Popular</div>
-          <div class="product-icon">🌾</div>
-          <h3>Raw & Parboiled Rice</h3>
-          <p>High-quality raw and parboiled rice processed to retain nutrition and meet both domestic and export specifications.</p>
-          <ul>
-            <li>Export-grade sorting</li>
-            <li>Low broken percentage options</li>
-            <li>Custom packing as per buyer needs</li>
-          </ul>
-        </article>
-        <article class="product-card">
-          <div class="product-icon">📦</div>
-          <h3>Rice By-Products</h3>
-          <p>Value-added by-products for animal feed, industrial use and further processing — maximizing the entire grain.</p>
-          <ul>
-            <li>Rice bran & broken rice</li>
-            <li>Husk & related co-products</li>
-            <li>Bulk supply capability</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Export / Why Us -->
-  <section class="section export" id="export">
-    <div class="container">
-      <div class="export-grid">
-        <div class="export-content">
-          <span class="section-label light">Global Capabilities</span>
-          <h2 class="section-title light">Export Ready. Quality Assured.</h2>
-          <p>
-            We support international buyers with reliable supply, proper documentation and packaging that meets destination-market requirements. Whether you need container loads or smaller trial shipments, our team is equipped to serve.
-          </p>
+    <section class="section products-wrap" id="products">
+      <div class="wrap">
+        <p class="eyebrow">What we offer</p>
+        <h2>Rice and by-products</h2>
+        <div class="rule"></div>
+        <p class="lede" style="margin-top:1.25rem">From the table to the mill floor — one source for finished rice and the value left in the grain.</p>
+        <div class="products">
+          <article class="product">
+            <img src="photos/table-rice.jpg" alt="Premium table rice" />
+            <div class="product-body">
+              <h3>Premium table rice</h3>
+              <p>Milled and graded for homes, hotels and institutional kitchens that need a clean, consistent grain.</p>
+              <ul>
+                <li><span class="tick">✓</span> Multiple grain lengths</li>
+                <li><span class="tick">✓</span> Hygienic packing</li>
+                <li><span class="tick">✓</span> Controlled moisture and polish</li>
+              </ul>
+            </div>
+          </article>
+          <article class="product featured">
+            <div class="product-media">
+              <img src="photos/raw-rice.jpg" alt="Raw and parboiled rice" />
+              <span class="badge">In demand</span>
+            </div>
+            <div class="product-body">
+              <h3>Raw & parboiled rice</h3>
+              <p>Export-ready raw and parboiled rice sorted to buyer specifications on broken percentage and finish.</p>
+              <ul>
+                <li><span class="tick">✓</span> Export-grade sorting</li>
+                <li><span class="tick">✓</span> Low-broken options</li>
+                <li><span class="tick">✓</span> Packing to buyer spec</li>
+              </ul>
+            </div>
+          </article>
+          <article class="product">
+            <img src="photos/byproducts.jpg" alt="Rice by-products" />
+            <div class="product-body">
+              <h3>Rice by-products</h3>
+              <p>Bran, husk and broken rice supplied in bulk for feed, industry and further processing.</p>
+              <ul>
+                <li><span class="tick">✓</span> Rice bran & brokens</li>
+                <li><span class="tick">✓</span> Husk and co-products</li>
+                <li><span class="tick">✓</span> Bulk supply</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section export" id="export">
+      <div class="wrap export-grid">
+        <div>
+          <p class="eyebrow kicker">Global capabilities</p>
+          <h2>Export ready. Quality assured.</h2>
+          <p class="soft">Container loads or a first trial shipment — we coordinate quality, packing and paperwork so the rice arrives the way the buyer specified.</p>
           <ul class="export-list">
-            <li>
-              <strong>Documentation Support</strong>
-              <span>Export paperwork, quality certificates & coordination</span>
-            </li>
-            <li>
-              <strong>Flexible Packaging</strong>
-              <span>From bulk to retail-ready packs as per buyer specification</span>
-            </li>
-            <li>
-              <strong>Consistent Quality</strong>
-              <span>Process controls focused on purity, moisture and broken levels</span>
-            </li>
-            <li>
-              <strong>Reliable Logistics</strong>
-              <span>Coordination from Tumakuru with pan-India & export reach</span>
-            </li>
+            <li><p>Documentation</p><span>Export paperwork and quality certificates, coordinated with the shipment.</span></li>
+            <li><p>Flexible packing</p><span>Bulk bags through to retail-ready packs.</span></li>
+            <li><p>Consistent grain</p><span>Controls on purity, moisture and broken percentage.</span></li>
+            <li><p>Logistics from Tumakuru</p><span>Pan-India movement and export dispatch from one base.</span></li>
           </ul>
         </div>
-        <div class="export-stats">
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Focus on Quality</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">2+</div>
-            <div class="stat-label">Director-Led Operations</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">KA</div>
-            <div class="stat-label">Based in Karnataka</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">Export</div>
-            <div class="stat-label">Ready Supply Chain</div>
-          </div>
+        <div class="stats">
+          <div class="stat"><strong>100%</strong><span>Attention on quality</span></div>
+          <div class="stat"><strong>KA</strong><span>Based in Karnataka</span></div>
+          <div class="stat"><strong>2</strong><span>Directors on the floor</span></div>
+          <div class="stat"><strong>Export</strong><span>Ready supply chain</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Reach Us</span>
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="section-line"></div>
-        <p class="section-desc">
-          Talk to our directors for pricing, samples, bulk orders or export enquiries.
-        </p>
-      </div>
-      <div class="contact-grid contact-grid-centered">
-        <div class="contact-info contact-info-wide">
-          <div class="contact-cards-row">
-            <div class="contact-block contact-card-item">
-              <h4>Directors</h4>
-              <div class="contact-person">
-                <strong>Sridhar Babu Ks</strong>
-                <span>Director</span>
-                <a href="tel:+918861200624">+91 88612 00624</a>
-                <a href="tel:+917022276585">+91 70222 76585</a>
-              </div>
-              <div class="contact-person">
-                <strong>Chaithanya Ks</strong>
-                <span>Director</span>
-                <a href="tel:+917996992799">+91 79969 92799</a>
-              </div>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <p class="eyebrow">Reach us</p>
+        <h2>Speak with the directors</h2>
+        <div class="rule"></div>
+        <p class="lede" style="margin-top:1.25rem">Call or write for pricing, samples, bulk orders or an export enquiry.</p>
+        <div class="contact-grid">
+          <article class="card">
+            <p class="eyebrow">Directors</p>
+            <div class="person" style="margin-top:1.25rem">
+              <strong>Sridhar Babu Ks</strong>
+              <div class="role">Director</div>
+              <a class="tel" href="tel:+918861200624">+91 88612 00624</a>
+              <a class="tel" href="tel:+917022276585">+91 70222 76585</a>
             </div>
-            <div class="contact-block contact-card-item">
-              <h4>Email</h4>
-              <a href="mailto:jyesthafoodspvtltd@gmail.com" class="email-link">jyesthafoodspvtltd@gmail.com</a>
-              <h4 style="margin-top: 28px;">Registered Address</h4>
-              <address>
-                No. 741/B/3/B/3, PID No 122523,<br />
-                Ward No 7, Gubbi Gate Extension,<br />
-                Gayathri Petrol Bunk, Gubbi Gate Circle,<br />
-                Tumakuru, Karnataka – 572101
-              </address>
+            <div class="person">
+              <strong>Chaithanya Ks</strong>
+              <div class="role">Director</div>
+              <a class="tel" href="tel:+917996992799">+91 79969 92799</a>
             </div>
-          </div>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Email</p>
+            <a class="mail" href="mailto:jyesthafoodspvtltd@gmail.com">jyesthafoodspvtltd@gmail.com</a>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Registered address</p>
+            <p class="addr">No. 741/B/3/B/3, PID No 122523, Ward No 7, Gubbi Gate Extension, Gayathri Petrol Bunk, Gubbi Gate Circle, Tumakuru, Karnataka – 572101</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="logo footer-logo">
-          <img src="logo-icon.png" alt="Jyestha Foods" class="footer-logo-img" />
-        </a>
-        <p>Quality Rice for a Healthier Tomorrow</p>
-        <p class="footer-tag">Rice Manufacturers • Agro Commodities • Exports</p>
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.png" alt="" />
+          <p>Jyestha Foods Pvt Ltd</p>
+        </div>
+        <p class="tiny">Quality rice for a healthier tomorrow.</p>
+        <p class="tag">Rice manufacturers · Agro commodities · Exports</p>
       </div>
-      <div class="footer-links">
-        <h5>Quick Links</h5>
-        <a href="#home">Home</a>
+      <div>
+        <h4>Visit</h4>
         <a href="#about">About</a>
         <a href="#products">Products</a>
         <a href="#export">Export</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-contact">
-        <h5>Contact</h5>
-        <a href="mailto:jyesthafoodspvtltd@gmail.com">jyesthafoodspvtltd@gmail.com</a>
-        <a href="tel:+918861200624">+91 88612 00624</a>
-        <a href="tel:+917996992799">+91 79969 92799</a>
+      <div class="stack">
+        <h4>Contact</h4>
+        <p>jyesthafoodspvtltd@gmail.com</p>
+        <p>+91 88612 00624</p>
+        <p>+91 79969 92799</p>
         <p>Tumakuru, Karnataka – 572101</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2025 Jyestha Foods Pvt Ltd. All rights reserved.</p>
-        <p class="footer-assoc">In association with CM Ventures & Airaa Global</p>
-      </div>
+    <div class="wrap legal">
+      <p>© 2026 Jyestha Foods Pvt Ltd</p>
+      <p>In association with CM Ventures & Airaa Global</p>
     </div>
   </footer>
 

@@ -1,54 +1,25 @@
-/* Jyestha Foods – Simple interactions */
-
 (function () {
-  const header = document.getElementById('header');
-  const nav = document.getElementById('nav');
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.querySelectorAll('.nav-link');
+  var header = document.getElementById("header");
+  var btn = document.getElementById("menuBtn");
+  var nav = document.getElementById("mobileNav");
 
-  // Header scroll effect
   function onScroll() {
-    if (window.scrollY > 20) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
+    header.classList.toggle("scrolled", window.scrollY > 12);
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
 
-  // Mobile nav toggle
-  navToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    navToggle.classList.toggle('active');
+  btn.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   });
 
-  // Close mobile nav on link click
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      navToggle.classList.remove('active');
+  nav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      nav.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-label", "Open menu");
     });
   });
-
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id]');
-  function updateActiveLink() {
-    const scrollY = window.scrollY + 100;
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute('id');
-      const link = document.querySelector(`.nav-link[href="#${id}"]`);
-      if (link) {
-        if (scrollY >= top && scrollY < top + height) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      }
-    });
-  }
-  window.addEventListener('scroll', updateActiveLink, { passive: true });
-  updateActiveLink();
 })();
